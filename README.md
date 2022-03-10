@@ -46,7 +46,7 @@ You will now see the output of both the React dev server and the Node server in 
 
 The Node Express.js server is initialized with one router mounted at `/api`. We've implemented a sample route at `/api/users`. Edit the `src/server/routes/api.js` file to add your own routes and server-side logic.
 
-In the React app, you can see in `src/client/src/App.js` where we're calling `/api/users` using `fetch`. `App.js` is a [functional component](https://reactjs.org/docs/components-and-props.html#function-and-class-components), so you can see how we're using `useEffect` to call our API on component mount, and `useState` to update component state when we receive a response from the API.
+In the React app, you can see in `src/client/src/App.jsx` where we're calling `/api/users` using `fetch`. `App.jsx` is a [functional component](https://reactjs.org/docs/components-and-props.html#function-and-class-components), so you can see how we're using `useEffect` to call our API on component mount, and `useState` to update component state when we receive a response from the API.
 
 ## Deployment
 
@@ -60,3 +60,4 @@ This project can be deployed as is to Heroku. Check out the [Heroku deployment g
 ### Elsewhere
 
 Deploying to [Amazon Web Services](https://aws.amazon.com/getting-started/projects/deploy-nodejs-web-app/), [Google Cloud](https://cloud.google.com/nodejs), [Microsoft Azure](https://azure.microsoft.com/en-us/develop/nodejs/), etc should work similarly. Just make sure to run the `heroku-postbuild` script, which generates the React production files, before the `start` entry point is hit. Depending on your use case and hosting infrastructure, it might make sense to [Dockerize](https://nodejs.org/de/docs/guides/nodejs-docker-webapp/) this template.
+# simon-interview
