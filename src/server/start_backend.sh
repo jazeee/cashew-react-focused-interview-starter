@@ -3,7 +3,6 @@ docker run --name flashcards_database -e POSTGRES_PASSWORD=cashew -e POSTGRES_US
 docker run --name flashcards_backend -it -v ${PWD}:/app -d -p 4002:4000 flashcards_backend
 
 docker cp database.sql flashcards_database:/
-docker exec -it flashcards_database psql -U postgres -f database.sql
 
 docker network connect flashcards flashcards_backend
 docker network connect flashcards flashcards_database
