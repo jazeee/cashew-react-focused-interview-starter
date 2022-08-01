@@ -7,7 +7,7 @@ const { db } = require('../adapters/postgres');
 /* GET users listing. */
 router.get("/users", async function(req, res, next) {
   const dataResults = await db.query('select * from flashcards');
-  res.send({ users: ["joe2", "bernie", "tulsi", "donald", "bill", dataResults[0]?.id] });
+  res.send({ users: ["joe2", "bernie", "tulsi", "donald", "bill", dataResults[0]?.definition] });
 });
 
 /* POST users listing. */
