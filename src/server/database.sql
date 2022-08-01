@@ -10,3 +10,5 @@ CREATE TABLE Flashcards (
   term TEXT NULL DEFAULT NULL,
   definition TEXT NULL DEFAULT NULL
 );
+
+insert into flashcards(term, definition) values ('sample term', 'sample definition');
